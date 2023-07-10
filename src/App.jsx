@@ -40,6 +40,24 @@ function App() {
     )
   }
 
+  // Rafraichi la liste dés clique sur bouton et une fois liste vide
+  if (tours.length === 0) {
+    return (
+      <main>
+        <div className="title">
+          <h2>no tours left</h2>
+          <button
+            type="button"
+            style={{ marginTop: '2rem' }}
+            onClick={fetchTours}
+          >
+            refresh
+          </button>
+        </div>
+      </main>
+    )
+  }
+
   return (
     <>
       <main>
