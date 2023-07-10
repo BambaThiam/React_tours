@@ -8,6 +8,13 @@ function App() {
   const [isLoading, setIsLoading] = useState(true)
   const [tours, setTours] = useState([])
 
+  // Remove by filtre
+  const removeTour = (id) => {
+    const newTours = tours.filter((tour) => tour.id !== id)
+    setTours(newTours)
+  }
+
+  // fetch tours
   const fetchTours = async () => {
     // Initialiser l'état à true pour l'API
     setIsLoading(true)
@@ -36,7 +43,7 @@ function App() {
   return (
     <>
       <main>
-        <Tours tours={tours} />
+        <Tours tours={tours} removeTour={removeTour} />
       </main>
     </>
   )
