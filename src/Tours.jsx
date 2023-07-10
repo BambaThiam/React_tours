@@ -6,6 +6,7 @@ const Tours = ({ tours }) => {
     <section>
       <div className="title">
         <h2>our tours</h2>
+        {/* div ci-dessous pour rajouter barre verte en dessous => style css */}
         <div className="title-underline"></div>
       </div>
       <div className="tours">
