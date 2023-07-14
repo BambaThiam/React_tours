@@ -258,6 +258,10 @@ main {
   margin: 5rem auto;
 }
 
+.titleBamba {
+  margin: 3rem auto;
+}
+
 .tours {
   padding: 2rem 0;
   display: grid;
